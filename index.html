@@ -5,45 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
+            margin: 0 2px;
             text-align: center;
-            padding-top: 100px;
-           margin: 20px;;
-            background-image: url(background\ 5.jpg);
-            background-size: cover;
-
         }
 
+        div.mainbody {
+            width: 300px;
+            border: 1px solid black;
+            height: 1000px;
+            background-image:url(https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fHww);
+            background-size: cover;
+            background-attachment: scroll;
+            background-position: center;
+        }
 
         header {
-            width: 100%;
-            height: 100px;
             background-color: #262626;
-            z-index: 9999;
-            
-            top: 4px;
-            border-radius: 10px;
+            height: 50px;
+            margin: 5PX 0;
+            position: fixed;
+            width: 300px;
         }
-
 
         div.logo {
             width: 30%;
             float: left;
-            line-height: 100px;
+            line-height: 35px;
+            margin-left: 5px;
         }
-
 
 
         .logo a {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 15px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fff;
             letter-spacing: 5px;
@@ -51,18 +53,17 @@
             font-weight: bolder;
         }
 
-
-        nave {
+        nav {
             float: right;
-            line-height: 100px;
-            margin-right: 50px;
+            line-height: 35px;
+            margin-right: 10px;
 
         }
 
 
-        nave a {
+        nav a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 10px;
             letter-spacing: 3px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fff;
@@ -72,290 +73,112 @@
 
         }
 
+
         div.banner-area {
            border-radius: 10px;
             width: 100%;
             height: 100px;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(background\ 7.jpg);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://www.pngwing.com/en/free-png-zeuxq);
             background-size: cover;
-            position: fixed;
-            z-index: 1;
+            background-position: center;
+            z-index: 10;
+            padding-top: 20px;
         }
 
 
         div.para {
             color: #fff;
-            font-size: 75px;
+            font-size: 15px;
             text-transform: uppercase;
             font-weight: bolder;
             margin: 10px 10px;
-            padding: -5px 12px;
+            padding: 40px 12px;
             font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
 
-        div.container-box {
-        position: relative;
-        top: 100px;
-            background-color: #ccc;
-            margin: 10px 5px;
-            padding: 50px 20px;
-            width: 470px;
-            height: auto;
-            display: inline-block;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-variant: small-caps;
-            border-radius: 10px;
-        }
+        div.orderlist-area{border: 2px solid white;
+            background-color: #262626;
+        margin: 0 2px;}
 
-
-
-        a:hover {
-            background-color: red;
-            color: white;
-            padding: 2px 1px;
-            border-radius: 50px;
-        }
-
-        div.container-box ol {
-            padding: 0 20px;
-        }
-
-        .h3-content {
-            color: red;
-            position: relative;
-            top: -15px;
-            text-decoration: underline;
-        }
-
-        div.input{position: absolute;
-        left: 500px;}
-
-        input[type=search], input[type=button]{outline: 2px solid red;}
-
-        
+        .orderlist-area ol{padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        color: #fff;
+    font-style: italic;
+font-weight: bolder;}
     </style>
+
 
 </head>
 
 <body>
-    <header>
+    <div class="mainbody">
+        <header>
 
-
-        <div class="navebar">
             <div class="logo">
-                <a href="">AAMIR</a>
+                <a href="#aamir">AAMIR</a>
             </div>
 
-            <nave>
-                <div class="input">
-                    <input type="search" placeholder="search">
-                    <input type="button" value="SEARCH">
-                </div>
-                <a href="">home</a>
-                <a href="">about</a>
-                <a href="">contect</a>
-                <a href="">services</a>
-                <a href="">back</a>
-            </nave>
+            <nav>
 
+                <a href="#contect">contect</a>
+                <a href="#about">about</a>
+
+            </nav>
+
+        </header>
+
+        <div class="banner-area">
+
+            <div class="para">
+    
+                <p>Welcome to my website </p>
+    
+            </div>
+    
         </div>
 
 
-    </header>
 
-    <div class="banner-area">
+<div class="orderlist-area">
 
+<ol>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
+    <li>Lorem ipsum dolor sit amet consectetur </li>
 
+</ol>
 
-        <div class="para">
+</div>
 
-            <p>Welcome to my website </p>
-
-        </div>
 
     </div>
 
-    <div class="container-box">
-        <h3 class="h3-content">paragraph-1</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus a, omnis similique magnam, laudantium,
-            dolores deserunt deleniti vel explicabo est mollitia ab. Repellat sed eveniet commodi provident? Eligendi
-            tempore vitae corrupti consectetur sequi illum odio, temporibus doloremque reiciendis nisi debitis ratione
-            accusamus qui eos. Dolores consequatur ullam quo quam aliquam, blanditiis dicta pariatur ipsam eum, tempora
-            in consequuntur. Dolores ut libero quas ducimus quidem necessitatibus, quos, itaque molestias magnam
-            corrupti repudiandae, animi repellat ullam? Eligendi nemo quisquam officia itaque quae obcaecati distinctio
-            rerum delectus, neque sit, nisi nam laboriosam iste excepturi? Aut, minima inventore nisi similique id autem
-            illo nesciunt corrupti facere deserunt est odio quia nihil temporibus enim earum cum eos neque deleniti
-            eveniet! Magnam fuga blanditiis excepturi odit iure! Obcaecati aliquid perspiciatis placeat libero nobis,
-            unde cupiditate molestiae tempora velit, neque deserunt magni consequuntur magnam voluptatum eaque. Aliquid
-            magnam veniam in harum a velit! Necessitatibus eius amet odio dignissimos ipsam, ab placeat laboriosam!
-            Rerum dolorum facere quos, nisi, explicabo esse, quidem dolorem tempore debitis iste eligendi ad modi nemo
-            minima sed deserunt fugit? Magni voluptatum, harum possimus sit dolorem in reiciendis, non dolorum, itaque
-            assumenda excepturi autem quos eum. Harum nostrum, adipisci sed consectetur voluptatum laborum iste quae
-            corporis ad modi atque? Ullam veniam repellat omnis sequi quia, nobis recusandae quibusdam tenetur culpa
-            sint! Reiciendis quod eos magnam explicabo. Aliquam mollitia est et asperiores alias molestiae accusantium
-            tempora non, omnis delectus dolores maxime similique excepturi dolore cumque expedita sed! Adipisci magni
-            dignissimos, alias, molestias sequi sapiente ipsum expedita explicabo aut consequuntur provident asperiores
-            consectetur debitis. Dolor soluta laborum dicta commodi, incidunt laudantium exercitationem ut totam est
-            voluptate aspernatur? Repellat rerum quaerat rem tempore dolores incidunt sunt, molestiae, soluta vel ipsam
-            vitae dolore sint fugit, temporibus dolorem inventore ab? Omnis corporis qui itaque impedit deleniti
-            doloribus doloremque dignissimos voluptatum expedita excepturi, velit ipsam saepe, vero quidem quasi tempora
-            repudiandae consectetur ipsa consequatur, sed incidunt. Inventore ipsam quibusdam fugiat ab consequatur esse
-            modi, ad vel numquam molestias dolore necessitatibus iste a odio nemo. Sed quisquam architecto odit dolor
-            ducimus, ullam optio explicabo, tempora natus placeat doloribus rem odio. Iste dolores quos harum ipsum
-            aliquid veniam possimus tenetur eligendi commodi magnam architecto quod perferendis porro quibusdam fuga,
-            itaque qui voluptate iusto. Aspernatur mollitia labore iure impedit, vel dolorum velit eligendi, enim saepe
-            accusantium ut voluptas quam nostrum consequuntur blanditiis doloremque rerum doloribus quos cumque
-            voluptatum ea? Quas commodi accusantium eius a delectus possimus itaque ullam corrupti harum minus
-            consequuntur voluptates optio magnam, ratione ipsam nobis atque sunt officiis. Similique natus non impedit
-            tempore distinctio molestiae obcaecati temporibus praesentium, ipsam hic nemo rerum, consequatur quibusdam
-            aut tenetur laudantium voluptate alias quisquam animi necessitatibus. Tenetur sed fugit ipsa eaque eveniet!
-            Non autem, recusandae ipsam eos tempore nam asperiores vel dicta blanditiis aperiam repellendus distinctio
-            animi, perferendis accusantium. Molestiae quam id optio cupiditate debitis sunt et numquam ullam non maxime
-            reprehenderit ad, veritatis deleniti. Nemo numquam perspiciatis odio nobis, molestias consequatur tenetur
-            fuga. Placeat voluptates repellat veritatis illum temporibus velit magni hic officiis voluptatibus?</p>
-
-    </div>
-
-    <div class="container-box">
-        <h3 class="h3-content">paragraph-2</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus a, omnis similique magnam, laudantium,
-            dolores deserunt deleniti vel explicabo est mollitia ab. Repellat sed eveniet commodi provident? Eligendi
-            tempore vitae corrupti consectetur sequi illum odio, temporibus doloremque reiciendis nisi debitis ratione
-            accusamus qui eos. Dolores consequatur ullam quo quam aliquam, blanditiis dicta pariatur ipsam eum, tempora
-            in consequuntur. Dolores ut libero quas ducimus quidem necessitatibus, quos, itaque molestias magnam
-            corrupti repudiandae, animi repellat ullam? Eligendi nemo quisquam officia itaque quae obcaecati distinctio
-            rerum delectus, neque sit, nisi nam laboriosam iste excepturi? Aut, minima inventore nisi similique id autem
-            illo nesciunt corrupti facere deserunt est odio quia nihil temporibus enim earum cum eos neque deleniti
-            eveniet! Magnam fuga blanditiis excepturi odit iure! Obcaecati aliquid perspiciatis placeat libero nobis,
-            unde cupiditate molestiae tempora velit, neque deserunt magni consequuntur magnam voluptatum eaque. Aliquid
-            magnam veniam in harum a velit! Necessitatibus eius amet odio dignissimos ipsam, ab placeat laboriosam!
-            Rerum dolorum facere quos, nisi, explicabo esse, quidem dolorem tempore debitis iste eligendi ad modi nemo
-            minima sed deserunt fugit? Magni voluptatum, harum possimus sit dolorem in reiciendis, non dolorum, itaque
-            assumenda excepturi autem quos eum. Harum nostrum, adipisci sed consectetur voluptatum laborum iste quae
-            corporis ad modi atque? Ullam veniam repellat omnis sequi quia, nobis recusandae quibusdam tenetur culpa
-            sint! Reiciendis quod eos magnam explicabo. Aliquam mollitia est et asperiores alias molestiae accusantium
-            tempora non, omnis delectus dolores maxime similique excepturi dolore cumque expedita sed! Adipisci magni
-            dignissimos, alias, molestias sequi sapiente ipsum expedita explicabo aut consequuntur provident asperiores
-            consectetur debitis. Dolor soluta laborum dicta commodi, incidunt laudantium exercitationem ut totam est
-            voluptate aspernatur? Repellat rerum quaerat rem tempore dolores incidunt sunt, molestiae, soluta vel ipsam
-            vitae dolore sint fugit, temporibus dolorem inventore ab? Omnis corporis qui itaque impedit deleniti
-            doloribus doloremque dignissimos voluptatum expedita excepturi, velit ipsam saepe, vero quidem quasi tempora
-            repudiandae consectetur ipsa consequatur, sed incidunt. Inventore ipsam quibusdam fugiat ab consequatur esse
-            modi, ad vel numquam molestias dolore necessitatibus iste a odio nemo. Sed quisquam architecto odit dolor
-            ducimus, ullam optio explicabo, tempora natus placeat doloribus rem odio. Iste dolores quos harum ipsum
-            aliquid veniam possimus tenetur eligendi commodi magnam architecto quod perferendis porro quibusdam fuga,
-            itaque qui voluptate iusto. Aspernatur mollitia labore iure impedit, vel dolorum velit eligendi, enim saepe
-            accusantium ut voluptas quam nostrum consequuntur blanditiis doloremque rerum doloribus quos cumque
-            voluptatum ea? Quas commodi accusantium eius a delectus possimus itaque ullam corrupti harum minus
-            consequuntur voluptates optio magnam, ratione ipsam nobis atque sunt officiis. Similique natus non impedit
-            tempore distinctio molestiae obcaecati temporibus praesentium, ipsam hic nemo rerum, consequatur quibusdam
-            aut tenetur laudantium voluptate alias quisquam animi necessitatibus. Tenetur sed fugit ipsa eaque eveniet!
-            Non autem, recusandae ipsam eos tempore nam asperiores vel dicta blanditiis aperiam repellendus distinctio
-            animi, perferendis accusantium. Molestiae quam id optio cupiditate debitis sunt et numquam ullam non maxime
-            reprehenderit ad, veritatis deleniti. Nemo numquam perspiciatis odio nobis, molestias consequatur tenetur
-            fuga. Placeat voluptates repellat veritatis illum temporibus velit magni hic officiis voluptatibus?</p>
-
-    </div>
-
-
-    <div class="container-box">
-
-        <h3 class="h3-content">order list</h3>
-        <ol>
-
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur elit.</li>
-
-
-
-
-
-
-        </ol>
-    </div>
+    
 
 </body>
 
